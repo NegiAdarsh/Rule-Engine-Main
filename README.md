@@ -1,6 +1,7 @@
 # Rule Engine with AST
+<img width="1440" alt="Screenshot 2024-10-25 at 5 03 26 PM" src="https://github.com/user-attachments/assets/669e660b-f4d7-429e-8a66-16458f59dc98">
 
-![image](https://github.com/user-attachments/assets/b650b1d0-88f5-4d4c-98bb-ced66a42cf36)
+
 
 This project is a **3-tier rule engine application** designed to determine user eligibility based on attributes such as **age, department, income, spend**, and more. It leverages an **Abstract Syntax Tree (AST)** to represent conditional rules, enabling dynamic creation, combination, and modification of these rules.
 
@@ -11,6 +12,8 @@ The application evaluates complex rules dynamically based on a user's data attri
 - Creating rules and converting them into ASTs.
 - Efficiently combining multiple rules.
 - Evaluating rules against user data for eligibility determination.
+<img width="1440" alt="Screenshot 2024-10-25 at 5 06 59 PM" src="https://github.com/user-attachments/assets/3a526744-47bb-4e2f-8981-0f59454775f5">
+
 
 ---
 
@@ -47,16 +50,20 @@ The application evaluates complex rules dynamically based on a user's data attri
 ## 📸 Snapshots
 
 ### Rule Details
-![image](https://github.com/user-attachments/assets/ffa09c6e-60d1-4548-9fcf-b79eed581eb4)
+<img width="1440" alt="Screenshot 2024-10-25 at 5 14 06 PM" src="https://github.com/user-attachments/assets/5bba9763-8138-4f46-a503-83cf5e53d1fd">
+
 
 ### Create Rule
-![image](https://github.com/user-attachments/assets/72ddecab-3748-4311-bb55-48de39061435)
+<img width="423" alt="Screenshot 2024-10-25 at 5 14 46 PM" src="https://github.com/user-attachments/assets/e6abdc55-1ca5-4a48-aed2-fd2f2cb57b9d">
+
 
 ### Evaluate Rule
-![image](https://github.com/user-attachments/assets/b3bf84c1-0a2f-458b-bac2-5a8c88ce8078)
+<img width="423" alt="Screenshot 2024-10-25 at 5 15 09 PM" src="https://github.com/user-attachments/assets/83486c83-40d4-47eb-aa85-fa0bc6db2132">
+
 
 ### Database Schema
-![image](https://github.com/user-attachments/assets/f53ec406-2810-4b55-92f4-c9c95898055b)
+<img width="1440" alt="Screenshot 2024-10-25 at 5 06 13 PM" src="https://github.com/user-attachments/assets/e0b85228-27ce-456d-aadc-7087b364b0e7">
+
 
 
 
@@ -69,7 +76,7 @@ The application evaluates complex rules dynamically based on a user's data attri
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone (https://github.com/NegiAdarsh/Rule-Engine-Main)
    ```
 
 2. **Navigate to the project directory:**
@@ -84,26 +91,23 @@ The application evaluates complex rules dynamically based on a user's data attri
    npm install
    ```
 
-4. **Set up environment variables:**
 
-   Create a `.env` file with the following keys:
 
-   ```bash
-   DB_URL=<your_database_url>
-   ```
-
-5. **Run both the Frontend and Backend:**
+4. **Run both the Frontend and Backend:**
 
    **To start the frontend:**
+   
 
    ```bash
    npm start
+   (If errors use npm i, before starting) 
    ```
 
    **To start the backend:**
 
    ```bash
    node index.js
+   (If errors use npm i, before starting) 
    ```
 
 6. **Access the application:**
@@ -123,17 +127,11 @@ The application evaluates complex rules dynamically based on a user's data attri
 
 - **Frontend**: React.js (or similar)
 - **Backend**: Node.js with Express.js
-- **Database**: PostgreSQL
+- **Database**: MongoDB
 - **Rule Engine**: Abstract Syntax Tree (AST)
 - **Deployment**: Docker or cloud services (optional)
 
 ---
 
-## 🤝 Contact
 
-For any questions or contributions, feel free to reach out via:
-- [LinkedIn](https://www.linkedin.com/in/shaswat-gusain-2924a324a/)
-- [Email](mailto:shaswatgusain1@example.com)
-
----
 
