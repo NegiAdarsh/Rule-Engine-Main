@@ -1,0 +1,254 @@
+/* General Body Styles */
+body {
+  transition: all 0.4s ease;
+  color: #133E87;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #B9E5E8; */
+  line-height: 1.7;
+}
+
+/* Dashboard Styles */
+.dash {
+  padding: 2.5rem;
+  background: #133E87;
+  border-radius: 24px;
+  margin: 1.5rem;
+  box-shadow: 0 4px 12px rgba(19, 62, 135, 0.15);
+  border: 1px solid rgba(19, 62, 135, 0.2);
+  color: #FFFFFF;
+}
+
+/* Night Mode Styles */
+.night-mode {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+/* App Container */
+.App {
+  text-align: left;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  /* background: #B9E5E8; */
+}
+
+/* Floating Button Styles */
+.floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #133E87;
+  color: #FFFFFF;
+  border: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(19, 62, 135, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.floating-button:hover {
+  background: #0f3270;
+  transform: translateY(-2px);
+}
+
+/* Heading Styles */
+.heading {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 60px;
+  background: #133E87;
+  border-radius: 2px;
+}
+
+/* Container Styles */
+.container {
+  background: #133E87;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(19, 62, 135, 0.2);
+  color: #FFFFFF;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  /* background: #B9E5E8; */
+}
+
+/* Card Styles */
+.card {
+  background: #133E87;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(19, 62, 135, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #FFFFFF;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(19, 62, 135, 0.15);
+}
+
+/* Button Styles */
+button {
+  background: #133E87;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background: #0f3270;
+  box-shadow: 0 4px 12px rgba(19, 62, 135, 0.2);
+}
+
+/* Night Mode Overrides */
+.night-mode {
+  background: #000000;
+}
+
+.night-mode .dash {
+  background: #133E87;
+  border-color: rgba(19, 62, 135, 0.3);
+  color: #FFFFFF;
+}
+
+.night-mode .container {
+  background: #133E87;
+  border-color: rgba(19, 62, 135, 0.3);
+  color: #FFFFFF;
+}
+
+.night-mode .card {
+  background: #133E87;
+  border-color: rgba(19, 62, 135, 0.3);
+  color: #FFFFFF;
+}
+
+.night-mode .heading {
+  color: #FFFFFF;
+}
+
+.night-mode button {
+  background: #133E87;
+  color: #FFFFFF;
+}
+
+.night-mode button:hover {
+  background: #0f3270;
+}
+
+/* Text colors for better visibility */
+.night-mode p,
+.night-mode h1,
+.night-mode h2,
+.night-mode h3,
+.night-mode h4,
+.night-mode h5,
+.night-mode h6,
+.night-mode span,
+.night-mode div {
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #133E87;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #133E87;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f3270;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .dash {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .floating-button {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
