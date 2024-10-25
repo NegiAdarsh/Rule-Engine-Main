@@ -3,7 +3,6 @@ require("dotenv").config();
 
 const db_password = process.env.DB_PASSWORD;
 
-// const mongoURI = `mongodb+srv://SolidSnake:rxzBaKUHHQ3xOz6p@cluster0.cnem5hz.mongodb.net/`;
 const mongoURI = `mongodb+srv://Admin-adarsh:1234@cluster0.zvgot.mongodb.net/`;
 
 async function connectDB() {
